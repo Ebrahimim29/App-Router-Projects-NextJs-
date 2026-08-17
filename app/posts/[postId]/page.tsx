@@ -2,13 +2,21 @@ import { Container, ListGroup, Row } from "react-bootstrap";
 import BackButton from "@/app/components/BackButton";
 import ListGroupItemLink from "@/app/components/ListGroupItemLink";
 
-const getPostsService = async (postId) => {
+export async function generateStaticParams() {
+    return [
+        {postId: "1"},
+        {postId: "2"},
+        {postId: "3"}
+    ]
+}
+
+const getPostsService = async (postId : number) => {
     const res = await fetch(`http://localhost:4000/posts/${postId}`)
     const post = await res.json()
     return post
 }
 
-const Page = async ({ params }) => {
+const Page = async ({ params } : any) => {
 
     const { postId } = await params; 
 
