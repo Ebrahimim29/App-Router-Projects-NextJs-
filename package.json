@@ -1,31 +1,20 @@
 {
-  "name": "my-app",
+  "name": "testnext",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "serve-json" : "json-server --watch db.json --port 4000"
+    "lint": "next lint",
+    "serve-json": "json-server --watch db.json --port 4000"
   },
   "dependencies": {
-    "@types/react-bootstrap": "^1.0.1",
-    "bootstrap": "^5.3.8",
-    "json-server": "^1.0.0-beta.15",
-    "next": "16.3.0",
-    "react": "19.2.8",
-    "react-bootstrap": "^2.10.10",
-    "react-dom": "19.2.8"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.3.0",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "bootstrap": "^5.3.2",
+    "json-server": "^0.17.4",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-bootstrap": "^2.9.2",
+    "react-dom": "^18"
   }
 }
