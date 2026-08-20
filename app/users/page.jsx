@@ -1,5 +1,6 @@
 import BackButton from '@/components/BackButton';
 import ListGroupItemLink from '@/components/ListGroupItemLink';
+import { revalidatePath } from 'next/cache';
 import React from 'react';
 import { Button, Container, Form, ListGroup, Row } from 'react-bootstrap';
 
@@ -26,9 +27,9 @@ const Users = async () => {
                 email
             })
         })
-        // if (res.status == 200) {
-            
-        // }
+        if (res.status == 200){
+            revalidatePath('/users')
+        }
     }
 
     return (
