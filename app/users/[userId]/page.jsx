@@ -32,7 +32,7 @@ const User = async ({ params }) => {
                     <ListGroupItemLink title={user.id} />
                     <ListGroupItemLink title={user.name} />
                     <ListGroupItemLink title={user.email} />
-                    <ListGroupItemLink title={user.address.city} />
+                    {/* <ListGroupItemLink title={user.address.city} /> */}
                 </ListGroup>
             </Row>
         </Container>

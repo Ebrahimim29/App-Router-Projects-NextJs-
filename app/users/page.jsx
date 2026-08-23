@@ -27,9 +27,11 @@ const Users = async () => {
                 email
             })
         })
-        if (res.status == 200){
+        console.log(res.status);
+        
+        // if (res.status == 200){
             revalidatePath('/users')
-        }
+        // }
     }
 
     return (

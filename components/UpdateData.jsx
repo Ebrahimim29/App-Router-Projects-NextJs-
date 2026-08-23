@@ -12,4 +12,4 @@ const UpdateData = ({path}) => {
     )
 }
 
-export default UpdateData;
+export default UpdateData; 
